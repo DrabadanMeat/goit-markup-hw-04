@@ -416,6 +416,9 @@ button {
 }
 
 /* <======================/PORTFOLIO==========================> */
+.li-sizen:hover{
+  box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);;
+}
 
 .portfolio-grid {
   display: flex;
@@ -468,39 +471,108 @@ border: 1px solid var(--portfolio-img);
   height: 12px;
   cursor: pointer;
   margin-right: 10px;
-  fill: var(--primery-text-color);
-}
-.icon-mail:hover{
-  fill:var(--accent-color)
+  fill: currentColor;
 }
 .icon-tel{
   width: 10px;
   height: 16px;
   margin-right: 10px;
   cursor: pointer;
-  fill: var(--primery-text-color);
+  fill: currentColor;
 }
-.icon-tel:hover{
-  fill:var(--accent-color)
+.social-links{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 16px;
 }
-
-.team-insta{
-  /* width: 20px;
-  height: 20px; */
+.social-link{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
   padding: 12px;
-  cursor: pointer;
+  border-radius: 50%;
+  
+  background-color: var(--background-color);
   fill: var(--icon-color);
 }
 
-.team-insta:hover{
-  fill: var(--accent-color);
+.social-item:not(:last-child){
+margin-right: 10px;}
+
+.item{
+  width: 20px;
+  height: 20px;
 }
 
-.team-contact{
+.social-link:hover{
+  background-color: var(--accent-color);
+  fill: var(--background-color);
+}
+
+.regular-customer{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.secondary-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--head-logo);
+}
+.regular-customer-list{
   display: flex;
-  gap: 10px;
-  justify-content: center;
-  margin: 0 auto;
-  width: 206px;
+  justify-content:space-between;
+  padding: 0;
+}
+.regular-customer-item{
+  margin-right: 30px;
+}
+.customer-btn{
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  background-color: var(--background-color);
+  fill: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+.customer-logo{
+  width: 106px;
+  height: 60px;
+}
+.customer-btn:hover{
+  background-color: var(--background-color);
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.footer-dark-list{
+  display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    margin-left: 70px;
+}
+
+.footer-flex{
+  display: flex;
+}
+.social-link-dark{
+  display: inline-block;
+  width: 44px;
   height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: var(--background-color);
+  
+}
+.social-link-dark:hover{
+  background-color: var(--accent-color);
+  fill: var(--background-color);
+}
+.footer-tex{
+  color: var(--background-color);
 }
